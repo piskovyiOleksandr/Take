@@ -1,0 +1,25 @@
+#power {
+  width: 100%;
+  padding: 340px 0 100px 200px;
+  background: url(/img/Layer8.png);
+  background-size: cover; }
+  #power .text {
+    max-width: 400px;
+    color: #ffffff; }
+    #power .text h1 {
+      font-size: 45px; }
+    #power .text p {
+      padding-top: 30px;
+      padding-bottom: 25px;
+      font-size: 12px;
+      line-height: 1.5; }
+    #power .text a {
+      text-decoration: none;
+      color: #ffffff; }
+      #power .text a img {
+        display: inline-block;
+        padding-left: 5px; }
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  #power {
+    padding: 100px; } }

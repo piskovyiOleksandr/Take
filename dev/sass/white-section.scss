@@ -1,0 +1,193 @@
+#white-section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 200px 235px 120px 235px;
+    background: #ffffff;
+    h2 {
+        font-size: 26px;
+        color: #000000;
+    }
+    .iphone {
+        position: absolute;
+        top: -400px;
+        right: 50px;
+        width: 400px;
+        height: 650px;
+        img {
+            max-width: 400px;
+            max-height: 650px;
+        }
+    }
+    .something {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .box {
+            width: 430px;
+            position: relative;
+            .pt {
+                padding-top: 120px;
+            }
+            p {
+                padding-top: 20px;
+                line-height: 1.2;
+                color: #b1b1b1;
+            }
+        }
+    }
+    .grid {
+        padding-top: 50px;
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            color: #ffffff;
+            h3 {
+                font-size: 16px;
+            }
+            p {
+                padding: 20px 0;
+                font-size: 12px;
+                line-height: 1.5;
+            }
+            a {
+                font-size: 12px;
+                font-weight: bold;
+                color: #ffffff;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                img {
+                    display: inline-block;
+                    padding-left: 5px;
+                }
+            }
+           
+            .small-box {
+                width: 25%;
+                padding: 35px 30px;
+                transition: all 0.7s ease;
+                cursor: pointer;
+                &:nth-child(1) {
+                    background: #f5989d;
+                }
+                &:nth-child(2) {
+                    background: #615f7d;
+                }
+                &:nth-child(3) {
+                    background: url(/img/Layer6.png);
+                    background-size: cover;
+                }
+                &:nth-child(4) {
+                    background: #bd8cbf;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .bg {
+                background: url(/img/Layer14.png) no-repeat !important;
+                background-size: cover !important;
+            }
+        }
+        .big-box {
+            width: 50%;
+            padding: 35px 30px;
+            background: url(/img/Layer5.png);
+            background-size: cover;
+            transition: all 0.7s ease;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    .details {
+        padding-top: 70px;
+        h2 {
+            padding-bottom: 40px;
+            font-size: 26px;
+            color: #000000;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box {
+                width: 215px;
+                color: #959595;
+                h4 {
+                    padding-top: 10px;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                p {
+                    padding-top: 20px;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1350px) {
+    #white-section {
+        padding: 100px !important;
+        .small-box {
+            width: 50% !important;
+        }
+        .big-box {
+            width: 100% !important;
+        }
+        .box {
+            width: 50% !important;
+            padding: 10px !important;
+        }
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:991px) {
+    #white-section {
+        padding: 100px !important;
+        .small-box {
+            width: 100% !important;
+        }
+        .big-box {
+            width: 100% !important;
+        }
+        .box {
+            width: 50% !important;
+            padding: 10px !important;
+        }
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:767px) {
+    #white-section {
+        padding: 50px !important;
+        .small-box {
+            width: 100% !important;
+        }
+        .big-box {
+            width: 100% !important;
+        }
+        .box {
+            width: 50% !important;
+            padding: 10px !important;
+        }
+        .something {
+            .box {
+                width: 100% !important;
+                .pt {
+                    padding-top: 500px;
+                }
+            }
+        }
+        .iphone {
+            top: 0;
+        }
+    }
+}
+
