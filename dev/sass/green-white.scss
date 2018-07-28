@@ -11,9 +11,10 @@
         .row {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
             .box {
-                width: 275px;
+                max-width: 275px;
+                padding: 10px;
+                box-sizing: border-box;
                 font-size: 12px;
                 color: #ffffff;
                 h5 {
@@ -29,7 +30,6 @@
     .white {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         padding: 80px 235px 110px;
         .box {
             width: 430px;
@@ -84,7 +84,7 @@
         }
     }
 }
-@media screen and (min-width:992px) and (max-width:1350px) {
+@media screen and (min-width:992px) and (max-width:1150px) {
     #green-white {
         .green {
             padding: 100px !important;
@@ -134,6 +134,7 @@
             padding: 50px !important;
             .row {
                 justify-content: center !important;
+                flex-wrap: wrap;
             }
             .box {
                 width: 100%;
@@ -142,6 +143,7 @@
         .white {
             padding: 80px 50px;
             justify-content: center;
+            flex-wrap:wrap;
             .box {
                 width: 100%;
             }

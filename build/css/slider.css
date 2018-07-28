@@ -103,13 +103,21 @@
     right: 20px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:767px) and (max-width:991px) {
+    .logo {
+        top:20px;
+        left: 20px;
+    }
     .slider-title {
         top: 200px;
         left: 100px;
     }
 }
 @media screen and (min-width:400px) and (max-width:767px) {
+    .logo {
+        top:20px;
+        left: 20px;
+    }
     .slider-title {
         top: 50px;
         left: 50px;

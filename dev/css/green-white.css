@@ -9,10 +9,11 @@
       color: #ffffff; }
     #green-white .green .row {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; }
+      justify-content: space-between; }
       #green-white .green .row .box {
-        width: 275px;
+        max-width: 275px;
+        padding: 10px;
+        box-sizing: border-box;
         font-size: 12px;
         color: #ffffff; }
         #green-white .green .row .box h5 {
@@ -23,7 +24,6 @@
   #green-white .white {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     padding: 80px 235px 110px; }
     #green-white .white .box {
       width: 430px;
@@ -67,7 +67,7 @@
         #green-white .white .box:hover .f {
           background: #bd8cbf; }
 
-@media screen and (min-width: 992px) and (max-width: 1350px) {
+@media screen and (min-width: 992px) and (max-width: 1150px) {
   #green-white .green {
     padding: 100px !important;
     text-align: center; }
@@ -99,11 +99,13 @@
   #green-white .green {
     padding: 50px !important; }
     #green-white .green .row {
-      justify-content: center !important; }
+      justify-content: center !important;
+      flex-wrap: wrap; }
     #green-white .green .box {
       width: 100%; }
   #green-white .white {
     padding: 80px 50px;
-    justify-content: center; }
+    justify-content: center;
+    flex-wrap: wrap; }
     #green-white .white .box {
       width: 100%; } }

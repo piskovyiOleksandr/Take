@@ -21,10 +21,11 @@
     .something {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         .box {
             width: 430px;
             position: relative;
+            padding: 10px;
+            box-sizing: border-box;
             .pt {
                 padding-top: 120px;
             }
@@ -112,9 +113,10 @@
         .row {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
             .box {
                 width: 215px;
+                padding: 10px;
+                box-sizing: border-box;
                 color: #959595;
                 h4 {
                     padding-top: 10px;
@@ -132,7 +134,7 @@
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1350px) {
+@media screen and (min-width:992px) and (max-width:1150px) {
     #white-section {
         padding: 100px !important;
         .small-box {
@@ -151,6 +153,9 @@
 @media screen and (min-width:767px) and (max-width:991px) {
     #white-section {
         padding: 100px !important;
+        .row {
+            flex-wrap: wrap;
+        }
         .small-box {
             width: 100% !important;
         }
@@ -178,6 +183,7 @@
             padding: 10px !important;
         }
         .something {
+            flex-wrap: wrap;
             .box {
                 width: 100% !important;
                 .pt {
@@ -187,6 +193,9 @@
         }
         .iphone {
             top: 0;
+        }
+        .details .row {
+            flex-wrap: wrap !important;
         }
     }
 }

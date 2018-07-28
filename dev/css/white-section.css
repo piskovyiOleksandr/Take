@@ -17,11 +17,12 @@
       max-height: 650px; }
   #white-section .something {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
+    justify-content: space-between; }
     #white-section .something .box {
       width: 430px;
-      position: relative; }
+      position: relative;
+      padding: 10px;
+      box-sizing: border-box; }
       #white-section .something .box .pt {
         padding-top: 120px; }
       #white-section .something .box p {
@@ -86,10 +87,11 @@
       color: #000000; }
     #white-section .details .row {
       display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap; }
+      justify-content: space-between; }
       #white-section .details .row .box {
         width: 215px;
+        padding: 10px;
+        box-sizing: border-box;
         color: #959595; }
         #white-section .details .row .box h4 {
           padding-top: 10px;
@@ -100,7 +102,7 @@
           font-size: 12px;
           line-height: 1.5; }
 
-@media screen and (min-width: 992px) and (max-width: 1350px) {
+@media screen and (min-width: 992px) and (max-width: 1150px) {
   #white-section {
     padding: 100px !important; }
     #white-section .small-box {
@@ -114,6 +116,8 @@
 @media screen and (min-width: 767px) and (max-width: 991px) {
   #white-section {
     padding: 100px !important; }
+    #white-section .row {
+      flex-wrap: wrap; }
     #white-section .small-box {
       width: 100% !important; }
     #white-section .big-box {
@@ -132,9 +136,13 @@
     #white-section .box {
       width: 50% !important;
       padding: 10px !important; }
-    #white-section .something .box {
-      width: 100% !important; }
-      #white-section .something .box .pt {
-        padding-top: 500px; }
+    #white-section .something {
+      flex-wrap: wrap; }
+      #white-section .something .box {
+        width: 100% !important; }
+        #white-section .something .box .pt {
+          padding-top: 500px; }
     #white-section .iphone {
-      top: 0; } }
+      top: 0; }
+    #white-section .details .row {
+      flex-wrap: wrap !important; } }
